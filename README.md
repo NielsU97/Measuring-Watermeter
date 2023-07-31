@@ -27,9 +27,20 @@
 ```
 sensor:    
     - platform: file
-      name: meterstand_water
+      name: water_meterstand
       file_path: /config/www/meterstand_water.txt
       value_template: '{{ value }}'
-      unit_of_measurement: "m3"
+      unit_of_measurement: "L"
+    - platform: template
+      sensors:  
+        water_total:
+          device_class: water
+          value_template: >-
+            {% set water = states('sensor.water_meterstand') | int %}
+            {{water / 1000}}
+          unit_of_measurement: "m3"
 ```
+<br>
+<br>
+<img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/hass_water_graph.png width="300"> 
 
