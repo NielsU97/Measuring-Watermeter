@@ -1,5 +1,5 @@
 <br>
-  <h1 align="center">NPN Sensor Water Consumption Integration with Home Assistant</h1>
+  <h1 align="center">Measuring Water Consumption with Home Assistant Integration using NPN Sensor</h1>
   <br>
  <h2 align="center">
 <img src="https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/watermeter_example.jpg" width="300">
@@ -22,10 +22,10 @@ Hardware needed:
 <br>
 
 <h2> Reading sensor data</h2> 
-The python script "watermeter.py" reads the sensor and write the number of rotations to a txt file. If the red pointer has made a full lap it equals one litre and has passed the sensor once. 
+The python script "watermeter.py" reads the sensor and write the number of rotations to a txt file. If the red pointer has made a full lap it equals one litre and has passed the sensor once. Change the path to your home assistant directory
 <br>
 <br>
-By creating the program in a Docker Container, it is easier to maintain. Edit the path volume to the your directory
+By running the program in a Docker Container, it is easier to maintain. Edit the path volume to the your directory.
 <br>
 <br>
 
