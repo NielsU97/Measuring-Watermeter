@@ -1,11 +1,11 @@
 <br>
   <h1 align="center">Measuring Water Consumption with Home Assistant Integration using NPN Sensor</h1>
   <br>
- <h2 align="center">
+ <p align="center">
 <img src="https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/watermeter_example.jpg" width="300">
   </br>
 </br>  
-<h2>	                                                                                                                                     
+<p>	                                                                                                                                     
 <h2> Connecting sensor to Raspberry Pi </h2> 
 Hardware needed:
 <ol>
@@ -16,16 +16,12 @@ Hardware needed:
 </br>
 <img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/connecting_sensor.png width="300"> 
 </br>
-</br>
 <img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/sensor_setup.jpg width="300"> 
-</br>
-<br>
-
 <h2> Reading sensor data</h2> 
 The python script "watermeter.py" reads the sensor and write the number of rotations to a txt file. If the red pointer has made a full lap it equals one litre and has passed the sensor once. Change the path to your home assistant directory
 <br>
 <br>
-By running the program in a Docker Container, it is easier to maintain. Edit the path volume to the your directory.
+By running the program in a Docker Container, it is easier to maintain. Edit the path volume to your directory.
 <br>
 <br>
 
@@ -64,7 +60,7 @@ template:
 The entity "Water Consumption" can be used to add it to your Energy Dashboard.
 <br>
 <br>
+<p>
 <img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/hass_water_meterstand.png width="300"> 
-<br>
-<br>
 <img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/hass_energy_dashboard.png width="300"> 
+</p>
