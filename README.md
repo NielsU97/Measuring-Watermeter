@@ -14,15 +14,27 @@ Hardware needed:
   - 10k resistor <br>
 </ol>
 </br>
-</br>
 <img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/connecting_sensor.png width="300"> 
+</br>
+</br>
+<img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/sensor_setup.jpg width="300"> 
 </br>
 <br>
 
 <h2> Reading sensor data</h2> 
-The python script "watermeter.py" reads the sensor and write the number of rotations to a txt file. If the red pointer has made a full lap it equals one litre and has passed the sensor once.
-</br>
+The python script "watermeter.py" reads the sensor and write the number of rotations to a txt file. If the red pointer has made a full lap it equals one litre and has passed the sensor once. 
 <br>
+<br>
+By creating the program in a Docker Container, it is easier to maintain. Edit the path volume to the your directory
+<br>
+<br>
+
+```
+docker build --network=host -t watermeter_reader .
+```
+```
+docker run -it --name watermeter-reader --volume /Python:/homeassistant/www --privileged -d  watermeter_reader:latest
+```
 
 <h2> Integration with Home Assistant</h2> 
 
