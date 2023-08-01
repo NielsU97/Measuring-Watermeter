@@ -33,7 +33,7 @@ By creating the program in a Docker Container, it is easier to maintain. Edit th
 docker build --network=host -t watermeter_reader .
 ```
 ```
-docker run -it --name watermeter-reader --volume /Python:/homeassistant/www --privileged -d  watermeter_reader:latest
+docker run -it --name watermeter-reader --volume /homeassistant/www:/homeassistant/www --privileged -d  watermeter_reader:latest
 ```
 
 <h2> Integration with Home Assistant</h2> 
