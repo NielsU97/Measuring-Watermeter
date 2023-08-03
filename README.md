@@ -67,7 +67,7 @@ The entity "Water Consumption" can be used to add it to your Energy Dashboard. Y
 
 <br>
 <br>
-<p>
-<img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/hass_water_meterstand.png width="300"> 
-<img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/hass_energy_dashboard.jpg width="400"> 
+<p align="center">
+<img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/hass_water_meterstand.png width="350"> 
+<img src=https://github.com/NielsU97/Measuring-Watermeter/blob/main/www/Images/hass_energy_dashboard.jpg width="250"> 
 </p>
